@@ -49,68 +49,169 @@ table {
 
 
 :root.Dark {
-    --background-color: #1f2937;
-    --border-color: #ccc;
-    --button-color: #3882F6;
-    --text-color: #F9FAF8;
+    --background-color: #ded6d3;
+    --form-background-color: #f6f2f1;
+    --border-color:  #4f3b25;
+    --button-color: #3e3817;
+    --text-color:  #4f3b25;
     --theme-name: "Dark";
 }
 
 :root.Light {
-    --background-color: #F9FAF8;
-    --text-color: #1f2937;
-    --border-color: rgb(21, 21, 21);
-    --button-color: #3882F6;
+    --background-color: #ded6d3;
+    --form-background-color: #f6f2f1;
+    --border-color:  #4f3b25;
+    --button-color: #3e3817;
+    --text-color:  #4f3b25;
     --theme-name: "Light";
 }
-
-.theme-toggle:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-}
-
-
 body {
-    /* add external font */
+    font-family: 'LibreBaskervilleRegular', serif;
     font-weight: normal;
     font-style: normal;
     display: flex; 
     flex-direction: column; 
     background-color: var(--background-color);
+    color: var(---text-color);
+    height: 100vh;
     }
 
-    .header {
+.header {
         align-items: center;
         padding: 20px 300px;
         position: sticky;
         background-color: var(--background-color);
+        color: var(---text-color);
         display: flex;
         box-shadow:0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
         top: 0;
         justify-content: space-between;
-    } 
+} 
 
-.footer {
-        /* this is done. style only */
-     background-color: var(--background-color);
-}
-
-.links {
+.header .links {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    font-size: 1.1rem;
     gap: 25px;
+    color: var(---text-color);
  }
+
  .links-member:hover {
     transform: scale(1.03);
  }
-
- .logo {
+ .header .logo {
      font-size: 1.5rem;
      color: var(---text-color);
      font-weight: bold;
  }
+ .theme-toggle {
+    color: var(--text-color);
+}
+.theme-toggle:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
 
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.picture{
+    background-image: url(/img/man-hugging-tree.jpg);
+    background-position: center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.banner-watermark {
+    position: relative;
+    top: 15vh;
+    align-items: center;
+    background-color: rgba(14, 14, 14, 0.7);
+    font-size: 2.5rem;
+    color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-header {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 100px 200px 50px 50px;
+}
+.form-header p:nth-child(2) {
+    margin-top:30px;
+}
+
+form {
+    color: var(--text-color);
+}
+form legend {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 20px 200px 20px 50px;
+}
+
+form .input-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 200px 20px 50px;
+}
+
+form .form-background {
+    background-color: white;
+    box-shadow:0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+
+button {
+    margin: 20px 200px 20px 50px;
+    padding: 10px 50px;
+    background-color: white;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+button:hover {
+    cursor: pointer;
+}
+
+label {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+label, 
+input {
+    display: block;
+}
+input {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+input:invalid {
+    border: 2px dashed red;
+  }
+
+input:valid {
+    border: 2px solid green;
+}
+
+.form-para {
+    padding: 20px 200px 20px 50px;
+}
  ul {
     list-style: none;
     padding: 0;
