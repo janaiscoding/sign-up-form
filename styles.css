@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+:root.Dark {
+    --background-color: #1f2937;
+    --border-color: #ccc;
+    --button-color: #3882F6;
+    --text-color: #F9FAF8;
+    --theme-name: "Dark";
+}
+
+:root.Light {
+    --background-color: #F9FAF8;
+    --text-color: #1f2937;
+    --border-color: rgb(21, 21, 21);
+    --button-color: #3882F6;
+    --theme-name: "Light";
+}
+
+.theme-toggle:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+body {
+    /* add external font */
+    font-weight: normal;
+    font-style: normal;
+    display: flex; 
+    flex-direction: column; 
+    background-color: var(--background-color);
+    }
+
+    .header {
+        align-items: center;
+        padding: 20px 300px;
+        position: sticky;
+        background-color: var(--background-color);
+        display: flex;
+        box-shadow:0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+        top: 0;
+        justify-content: space-between;
+    } 
+
+.footer {
+        /* this is done. style only */
+     background-color: var(--background-color);
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+ }
+ .links-member:hover {
+    transform: scale(1.03);
+ }
+
+ .logo {
+     font-size: 1.5rem;
+     color: var(---text-color);
+     font-weight: bold;
+ }
+
+ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
+    color:var(--text-color);
+    cursor: pointer;
+}

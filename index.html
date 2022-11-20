@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jana's Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo links-member"><a href="https://github.com/JanaIsCoding">Jana is Coding</a></div>
+        <ul class="links">
+            <li class="links-member"><a href="https://github.com/JanaIsCoding">About</li></a>
+            <li class="links-member"><a href="https://github.com/janaiscoding?tab=repositories">Portfolio</li></a>
+            <li class="links-member"><a href="https://www.linkedin.com/in/jana-istrate/">Contact</li></a>
+            <li class="theme-toggle"> <span class="theme-name" class="theme-toggle">Dark</span> Theme</li>
+        </ul>
+    </header>
+    <div class="banner">
+        <img src="./img/man-hugging-tree.jpg" alt="man hugging a tree in the woods" width="300px">
+        <img class="banner-logo-image" src="./img/hug-logo.webp" alt="Kakha Kakhadzen's Hug logo">
+        <p class="banner-text">Hug a tree</p>
+        <div class="banner-text-background"></div>
+    </div>   
+    <div class="top">
+        <p>This is not a real online service! 
+            You know you need something like this in your life to help you
+            realize your deepest dreams. Sign up <span style="font-style: italic;">now</span> to get started.</p>
+        <p>You <span style="font-style: italic;">know</span> you want to.</p>
+    </div>
+    <form action="/my-handling-form-page" method="post">
+        <legend>Let's do this!</legend>
+        <ul>
+            <li>
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first_name" placeholder="John"/>
+            </li>
+            <li>
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Johnson"/>
+            </li>
+            <li>
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email" placeholder="john.johnson@email.com"/>
+            </li>
+            <li>
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="text" id="phone-number" name="phone-number" placeholder="0192-2382-3827"/>
+            </li>
+            <li>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password"/>
+            </li>
+            <li>
+                <label for="password">CONFIRM PASSWORD</label>
+                <input type="password" id="password" name="password"/>
+            </li>
+        </ul>
+        <button type="submit">Create Account</button>
+    <p class="form-para">Already have an account? <a href="#">Log in</a></p>
+    </form>
+
+</body>
+</html>
