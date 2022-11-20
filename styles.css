@@ -148,7 +148,9 @@ main {
 .form-header {
     color: var(--text-color);
     font-size: 1.5rem;
-    padding: 100px 200px 50px 50px;
+    padding: 80px 200px 50px 50px;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
 }
 .form-header p:nth-child(2) {
     margin-top:30px;
@@ -182,6 +184,8 @@ button {
     color: var(--text-color);
     font-weight: bold;
     font-size: 1.1rem;
+    border-color: var(--text-color);
+    letter-spacing: 1px;
 }
 button:hover {
     cursor: pointer;
@@ -191,27 +195,47 @@ label {
     font-size: 0.7rem;
     margin-top: 10px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 label, 
 input {
     display: block;
 }
+
 input {
     margin-bottom: 20px;
     font-size: 1rem;
+    border-radius: 3px;
+    height: 20px;
+    background-color: white;
+    opacity: 50%;
 }
+
+input:focus {
+    outline: none;
+    border: 2px solid white;
+    opacity: 100%;
+}
+
 input:invalid {
-    border: 2px dashed red;
+    border: 1px solid red;
+    border-radius: 3px; 
+    background-color: rgba(255, 0, 0, 0.187);
+    opacity: 100%;
   }
 
 input:valid {
-    border: 2px solid green;
+    border: 1px solid green;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 100%;
 }
 
 .form-para {
     padding: 20px 200px 20px 50px;
 }
+
  ul {
     list-style: none;
     padding: 0;

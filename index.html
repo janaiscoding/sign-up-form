@@ -40,33 +40,33 @@
         <div class="input-wrapper">
 
             <div class="input">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first_name" placeholder="John"/>
+                <label for="first-name" pattern="/^[a-z ,.'-]+$/i">FIRST NAME</label>
+                <input type="text" id="first-name" name="first_name" placeholder="John" required/>
+            </div>
+
+            <div class="input">
+                <label for="last-name" pattern="/^[a-z ,.'-]+$/i">LAST NAME</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Johnson" required/>
             </div>
 
             <div class="input">
                 <label for="email">EMAIL</label>
-                <input type="text" id="email" name="email" placeholder="john.johnson@email.com"/>
-            </div>
-
-            <div class="input">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password"/>
-            </div>
-
-            <div class="input">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last_name" placeholder="Johnson"/>
+                <input type="text" id="email" name="email" placeholder="john.johnson@email.com" required/>
             </div>
 
             <div class="input">
                 <label for="phone-number">PHONE NUMBER</label>
-                <input type="text" id="phone-number" name="phone-number" placeholder="0192-2382-3827"/>
+                <input type="text" id="phone-number" name="phone-number" placeholder="012-232-3827" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required/>
+            </div>
+
+            <div class="input">
+                <label for="password">PASSWORD*</label>
+                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required/>
             </div>
 
             <div class="input">
                 <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" id="password" name="password"/>
+                <input type="password" id="password" name="password" required/>
             </div>
 
         </div>
@@ -74,7 +74,7 @@
     </div>
         <button type="submit">Create Account</button>
     </form>
-    
+
     <p class="form-para">Already have an account? <a href="https://github.com/JanaIsCoding">Log in</a></p>
 
 </div>   
