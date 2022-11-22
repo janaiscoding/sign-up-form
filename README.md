@@ -25,6 +25,11 @@
 - Working with validations
 - A lot of other small things
 
+<h3> Project details </h3>
+
+- This project is part of The Odin Project's [curriculum](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) 
+- Some future ideas include: better styling and rules for validation.
+
 
 <h1>Credits</h1>
 
